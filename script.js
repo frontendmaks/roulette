@@ -11,7 +11,7 @@ $(document).ready(function () {
     initWheel();
 
     //підключаємось до сокета
-    const socket = new WebSocket('ws://localhost:8080');
+    const socket = new WebSocket('wss://roulette-backend-01800c8c5863.herokuapp.com');
 
     $('button').on('click', function () {
         selectedNumber = $('#number-input').val();
